@@ -12,7 +12,7 @@ function buildButtons(){
     $("#button-container").empty();
     for (var j = 0; j < categoryArray.length; j++){
         var newButton = $('<button>');
-            newButton.addClass("btn btn-light gif-button mx-1");
+            newButton.addClass("btn btn-light gif-button mx-1 my-1");
             newButton.attr('data-keyword', categoryArray[j]);
             newButton.text(categoryArray[j]);
         $("#button-container").append(newButton);
@@ -25,7 +25,11 @@ $(document).on("click", ".gif-button", function() {
     var keyword = $(this).attr("data-keyword");
     var populateNumber = $("#numberOfGifs").val();
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      keyword + "&api_key=mNFvoqdlvdsUiXEwJutQjX7o74jxV4hh&limit=" + populateNumber;
+      // keyword + "&api_key=mNFvoqdlvdsUiXEwJutQjX7o74jxV4hh&limit=" + populateNumber;
+    //   In case of "Failed to load resource: the server responded with a status of 429 ()" 
+    //   (due to overuse of personal API key), use the following key (BootCamp API key):
+      keyword + "&api_key=dc6zaTOxFJmzC&limit=" + populateNumber;
+
 
     $.ajax({
       url: queryURL,

@@ -1,0 +1,43 @@
+html { 
+    background: url(../images/photo-1533085281462-6ae8d2c36017.jpg) no-repeat center center fixed; 
+    background-size: cover;
+  }
+
+  
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+}
+
+  
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+}
+
+h3,
+h4 {
+    font-family: 'Playfair Display SC', serif;
+}
+
+h5 {
+    /* font-family: 'Shadows Into Light', cursive; */
+    margin-top: 10px;
+}
+
+.jumbotron {
+    background-color: #FEFEFE;
+    margin-top: 7.5%;
+    /* border: 2px solid gray; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* height: 650px; */
+}
+
+div.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
